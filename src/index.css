@@ -1,0 +1,111 @@
+/* src/styles.css */
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Card container */
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #444;
+  font-size: 14px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  background: #fafafa;
+}
+
+input:focus {
+  border-color: #6a11cb;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.2);
+}
+
+/* Placeholder style */
+input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Button */
+button {
+  width: 100%;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 12px rgba(37, 117, 252, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.03);
+}
+
+/* Success message */
+.success-message {
+  margin-top: 15px;
+  text-align: center;
+  color: green;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
